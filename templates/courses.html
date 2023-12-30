@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* Reset default margin and padding */
+    body, h1, h2, h3, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: lightyellow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .logo img {
+      max-width: 650px; /* Adjust the width as needed */
+      max-height: 550px;
+      margin-right: 50px; /* Space between images */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: darkblue;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: white;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: lightyellow;
+      padding: 20px;
+      text-align: center;
+    }
+
+
+    /* Container for images */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; /* Allows images to wrap to the next line */
+      gap: 20px; /* Space between images */
+      padding: 20px;
+    }
+
+    /* Styles for sections */
+    .section1,
+    .section2 {
+      flex: 1; /* Equal width for both sections */
+      padding: 20px;
+      border: 5px solid ; blue* Optional: Border for visibility */
+      margin: 10px;
+    }
+
+    /* Arrange sections horizontally */
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Adjust as needed */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .section1,
+      .section2 {
+        flex: 100%; /* Full width on smaller screens */
+      }
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEAS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="static/images/logo.jpg" alt="Your Logo">
+    </div>
+    <nav>
+      <ul>
+      <li style="font-size: 30px"><a href="/about">About Us</a></li>
+        <li style="font-size: 30px"><a href="/contact">Contact Us</a></li>
+        <li style="font-size: 30px"><a href="/courses">Courses Available</a></li>
+      </ul>
+    </nav>
+  </header>
+<p style="width: 700px; height: auto; font-size: 54px; color: #336699;">Short term courses: </p>
+
+  <!-- Container for images -->
+  <div class="section1">
+    <!-- Content for section1 -->
+    <!-- Add more content as needed -->
+    <br>
+    <br>
+    <h2>1)Autosar: AUTOSAR (AUTomotive Open System ARchitecture) is a standardized software framework for automotive systems. It offers tools for development, configuration, and integration of embedded software in vehicles
+          <br>
+    <br>
+           <div class="logo">
+      <img src="static/images/auto.png" alt="Your Logo">
+    </div>
+    <br>
+       <br>
+
+2)Automotive Systems: Automotive systems encompass various interconnected components, including engines, transmissions, electrical systems, and onboard computers, crucial for the functioning of vehicles
+
+    <br>
+          <br>
+
+
+3)Embedded C:
+Embedded C is a specialized programming language used for developing software that runs on embedded systems, emphasizing efficiency, real-time performance, and hardware-specific functionalities
+
+    <br>
+          <br>
+
+
+            <div class="logo">
+      <img src="static/images/ras.png" alt="Your Logo">
+    </div>
+
+4)Python:
+Python is a high-level, versatile programming language known for its readability, simplicity, extensive libraries, and suitability for various applications, including web development and data analysis
+
+    <br>
+        <br>
+
+5)Micro-python:
+MicroPython is a lean implementation of Python optimized for microcontrollers and embedded systems, offering simplicity, efficiency, and ease for IoT and hardware-related projects</h2>
+
+
+    <br>
+
+    <br>
+        <div class="logo">
+      <img src="static/images/mp.png"  style="width: 200px; height: auto;" alt="Your Logo">
+    </div>
+  </div>
+    <br>
+    <br>
+
+    <br>
+<p style="width: 700px; height: auto; font-size: 54px; color: #336699;">Long term course:</p>
+  <div class="section2">
+    <!-- Content for section2 -->
+
+    <br>
+    <br>
+    <h2>
+We are going to cover all the  following modules :
+  <br>
+    <br>
+1)C programming: C is a powerful, procedural programming language with high performance, widely used for system software, embedded systems, and application development.
+
+        <br>
+    <br>
+2)Data structures and algorithms: Data structures and algorithms involve organizing and manipulating data effectively, offering optimized solutions for various computational problems, critical in software development.
+        <br>
+    <br>
+           <div class="logo">
+      <img src="static/images/data.jpg"  style="width: 700px; height: auto;" alt="Your Logo">
+    </div>
+3)C++ programming: C++ is an object-oriented programming language derived from C, known for its efficiency, versatility, and extensive use in software development and system programming.
+        <br>
+    <br>
+
+4)Python Programming: Python is a high-level, versatile programming language celebrated for its simplicity, readability, and extensive libraries, widely used in web development, data analysis, and automation.
+        <br>
+    <br>
+
+5)Linux OS/Shell scripting: Linux, an open-source OS, utilizes shell scripting to automate tasks. It involves using shell commands and scripting languages for system administration and process automation.
+        <br>
+    <br>
+
+6)Introduction to Embedded Systems: Embedded systems are specialized computing systems within devices. They control specific functions, integrating hardware and software for applications like IoT, automotive, and consumer electronics.
+
+        <br>
+    <br>
+
+7)Introduction to automotive systems, introduction to Autosar, CAN, CANoe bus:  Automotive systems encompass vehicle functions. AUTOSAR standardizes automotive software. CAN (Controller Area Network) enables communication, while CANoe tests and simulates CAN bus networks.
+        <br>
+    <br>
+8)Basics of networking(ISO model, TCP/UDP protocol etc.): Networking follows ISO model's layers for data transmission. TCP provides reliable, ordered delivery, while UDP offers faster, connectionless transmission in computer communications.
+        <br>
+    <br>
+                   <div class="logo">
+      <img src="static/images/tcp.jpg"  style="width: 700px; height: auto;" alt="Your Logo">
+    </div>
+            <br>
+    <br>
+Post Graduation Diploma in Embedded and Automotive System Design.
+        <br>
+    <br>
+
+
+Fees: INR ₹35,000
+        <br>
+    <br>
+
+Duration of course is : 6 months
+        <br>
+    <br>
+
+For more details contact to us : +91 98819 88594,+918308732271 </h2>
+      <br>
+    <br>
+  </div>
+
+  <footer>
+    <!-- Footer content -->
+    <b><h2>Institute of Embedded and Automotive Systems(IEAS), Pune
+<br>
+      <br><h3>
+      Our institute is focusing on practical as well as industrial knowledge as students become more fit in current industry 2.0 scenerio. Our total staff have experience in big MNC company's. So our staff is well experienced and high educated.
+
+      </h3>
+      <h2>
+    </h2>
+    </b>
+  </footer>
+</body>
+</html>
