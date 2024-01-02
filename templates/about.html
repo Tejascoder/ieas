@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     /* Reset default margin and padding */
     body, h1, h2, h3, ul, li {
       margin: 0;
       padding: 0;
     }
-    .instagram-button {
-      display: inline-block;
-      background-color: #C13584;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+
+    /* General styles */
+    body {
       font-family: Arial, sans-serif;
-    }
-    .instagram-button:hover {
-      background-color: #3f50b5;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      margin: 0;
     }
 
     /* Header Styles */
@@ -31,9 +28,9 @@
     }
 
     .logo img {
-      max-width: 650px; /* Adjust the width as needed */
-      max-height: 550px;
-      margin-right: 50px; /* Space between images */
+      max-width: 100%;
+      height: auto;
+      margin-right: 20px; /* Space between images */
     }
 
     nav ul {
@@ -54,17 +51,6 @@
     nav ul li a:hover {
       color: white;
     }
-   .placement-text {
-     border: 5px solid red; /* Red border */
-     padding: 20px;
-     display: inline-block;
-   }
-
-   .placement {
-     border: 5px solid black; /* Red border */
-     padding: 20px;
-     display: inline-block;
-   }
 
     /* Footer Styles */
     footer {
@@ -73,10 +59,11 @@
       text-align: center;
     }
 
-     .marquee {
-      width: 130%;
+
+    /* Marquee styles */
+    .marquee {
+      width: 100%;
       overflow: hidden;
-      white-space: nowrap;
       box-sizing: border-box;
       animation: marquee 15s linear infinite;
       text-align: center; /* Center align the marquee text */
@@ -89,24 +76,35 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     }
 
+    /* Mobile styles */
+    @media screen and (max-width: 768px) {
+      .marquee {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+      }
+    }
+
+    /* Tablet styles (adjust these as needed) */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .marquee {
+        font-size: 20px; /* Adjust font size for tablets */
+      }
+    }
+
     @keyframes marquee {
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
-    /* Container for images */
-    .image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap; /* Allows images to wrap to the next line */
-      gap: 20px; /* Space between images */
-      padding: 20px;
+    }
+
+    /* Tablet styles */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .logo img {
+        max-width: 80%;
+      }
     }
   </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IEAS</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -115,77 +113,35 @@
     </div>
     <nav>
       <ul>
-        <li style="font-size: 30px"><a href="/about">About Us</a></li>
-        <li style="font-size: 30px"><a href="/contact">Contact Us</a></li>
-        <li style="font-size: 30px"><a href="/courses">Courses Available</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/courses">Courses Available</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Your main content -->
 
   <footer>
     <div class="marquee">
-      <b><h2>Come Join Us and Get Placed! We are the best and we can train you too!</h2></b>
+      <h2>Come Join Us and Get Placed! We are the best and we can train you too!</h2>
       <h2>“If we teach today as we taught yesterday, we rob our children of tomorrow.”</h2>
     </div>
-    <!-- Footer content -->
-    <p><h1>Institute of Embedded and Automotive Systems(IEAS), Pune</b></h1>
-<br>
-    <br>
-    <br>
-    <br>
-<h2 class="placement-text">This is totally online course with 100% PLACEMENT ASSISTANCE!
-  <br>
-  <br>
-
-
-For more details contact to us :
-    <br>
-
-
-  <br>
-  +919881988594
-  <br>
-    <br>
-
-  +918308732271
-  <br>
-  <br>
-
-
-    <b> Click below images to connect with us!</b>
-    <br>
-  <br>
-
-<a href="https://www.instagram.com/ieas_pune?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D">
-<img style="height: 100px; width: 150px;" src="static/images/insta.png" alt="Clickable Image">
-</a>
-    <br>
-     <br>
-     <br>
-     <br>
+    <h1>Institute of Embedded and Automotive Systems(IEAS), Pune</h1>
+    <h2 class="placement-text">This is totally online course with 100% PLACEMENT ASSISTANCE! For more details, contact us:
+      <br>+919881988594
+      <br>+918308732271
+      <br>Click below images to connect with us!</h2>
+    <a href="https://www.instagram.com/ieas_pune?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D">
+      <img style="height: 100px; width: 150px;" src="static/images/insta.png" alt="Clickable Image">
+    </a>
     <a href="https://chat.whatsapp.com/Bnu8WmTVnxI4x2B5zRcdRD">
-  <img style="height: 150px; width: 150px;" src="static/images/whatsapp.png" alt="Clickable Image">
-</a>
-    <br>
-    <br>
-    </h2>
-
-    <br>
-     <br>
-
-    <h2> Top companies hiring our students: </h2>
-    <br>
-      <br>
-     <div class="logo">
+      <img style="height: 150px; width: 150px;" src="static/images/whatsapp.png" alt="Clickable Image">
+    </a>
+    <h2>Top companies hiring our students:</h2>
+    <div class="logo">
       <img src="static/images/comp.png" alt="Your Logo" height="500px">
     </div>
-
-    <br>
-  <br>
-
-
-
   </footer>
 </body>
 </html>
