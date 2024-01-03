@@ -18,6 +18,8 @@ def submit():
     if request.method == 'POST':
         name= request.form['name']
         email= request.form['email']
+        mob = request.form['mob']
+
 
         msg= request.form['message']
 
@@ -41,7 +43,7 @@ def submit():
         message['Subject'] = 'Thanks for registering, A representative will get back to you soon!!'
 
         # Add body to email
-        body = 'Data recieved: ' + '\n' + 'Name: ' + name + '\n' + 'Email: ' + email +'\n' + 'Message: ' + msg
+        body = 'Data recieved: ' + '\n' + 'Name: ' + name + '\n' + 'Email: ' + email +'\n' + 'Mobile: ' + mob +'\n' + 'Message: ' + msg
         message.attach(MIMEText(body, 'plain'))
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.starttls()  # Secure the connection
