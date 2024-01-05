@@ -33,7 +33,7 @@ def submit():
 
         # Email credentials
         sender_email = 'ieas.pune01@gmail.com'  # Replace with the sender's email address
-        receiver_email = email  # Replace with the recipient's email address
+        receiver_email = 'amolphopase2018@gmail.com'  # Replace with the recipient's email address
         password = 'bylg qfqj udix rumw'  # Replace with the sender's email password
 
         # Create the email message
